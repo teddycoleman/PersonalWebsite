@@ -14,7 +14,7 @@
  *= require_self
  */
 
-.background{
+/*.background{
   background: url("background.jpg") no-repeat top center fixed;
   background-size: cover;
   height: 100vh;
@@ -22,7 +22,7 @@
   margin: 0 0 0 0 !important;
   padding: 0;
 }
-
+*/
 .my-name{
 	font-size: 12vh;
 	top: 20vh;
