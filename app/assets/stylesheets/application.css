@@ -14,15 +14,16 @@
  *= require_self
  */
 
-/*.background{
-  background: url("background.jpg") no-repeat top center fixed;
-  background-size: cover;
-  height: 100vh;
+.home{
+	display: block;
+	height: 100vh;
   width: 100vw !important;
+/*  background: url("background.jpg") no-repeat top center fixed;
+  background-size: cover;
   margin: 0 0 0 0 !important;
-  padding: 0;
+  padding: 0;*/
 }
-*/
+
 .my-name{
 	font-size: 12vh;
 	top: 20vh;
@@ -33,5 +34,14 @@
 	font-size: 6vh;
 	top: 25vh;
 	position: relative;
+}
+
+.portfolio{
+	position: relative;
+	display: block;
+}
+
+.project-header{
+	margin-top: 0;
 }
 
