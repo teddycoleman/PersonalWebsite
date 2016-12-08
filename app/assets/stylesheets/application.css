@@ -15,6 +15,22 @@
  *= require font-awesome
  */
 
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.black-border{
+	border: 1px solid black;
+}
+
+.contact{
+	/*background-color: #F7CB21;*/
+}
+
+.experience{
+	/*background-color: #FBFAE6;*/
+}
+
 .home{
 	display: block;
 	height: 100vh;
@@ -25,25 +41,39 @@
   padding: 0;*/
 }
 
+li{
+	list-style: none;
+	text-align: left;
+}
+
 .my-name{
 	font-size: 12vh;
 	top: 20vh;
 	position: relative;
 }
 
-.subtitle{
-	font-size: 6vh;
-	top: 25vh;
-	position: relative;
-}
-
 .portfolio{
 	position: relative;
 	display: block;
+	/*background-color: #98EFC7;*/
 }
 
 .project-header{
 	margin-top: 0;
+}
+
+.section-header{
+	font-size: 7vh;
+}
+
+.skills{
+	/*background-color: #fff;*/
+}
+
+.subtitle{
+	font-size: 6vh;
+	top: 25vh;
+	position: relative;
 }
 
 /*Timeline formatting*/

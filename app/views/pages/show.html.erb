@@ -12,44 +12,47 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><%= link_to "Home", root_path(:anchor => "home")%></li>
+        <li><%= link_to "Portfolio", root_path(:anchor => "portfolio")%></li>
+        <li><%= link_to "Skills", root_path(:anchor => "skills")%></li>
+        <li><%= link_to "Experience", root_path(:anchor => "experience")%></li>
+        <li><%= link_to "Contact", root_path(:anchor => "contact")%></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- Home -->
-<div class="container home">
+<div class="container home" id="home">
 	<div class="row">
 		<div class="col-md-12 text-center">
 			<h1 class="my-name">Teddy Coleman</h1>
 			<h2 class="subtitle">Web Developer</h2>
 		</div>
 	</div>
+	<br>
 </div>
 
 <!-- Portfolio -->
-<div class="container portfolio">
+<div class="container portfolio" id="portfolio">
 	<div class="row">
 		<div class="col-md-12 text-center">
-			<h1> Portfolio </h1>
+			<br>
+			<br>
+			<h1 class="section-header"> Portfolio </h1>
 		</div>
 	</div>
 	<br>
 	<!-- Local Artist Project -->
 	<div class="row project">
 		<div class="col-md-6">
-			<%= image_tag("Local Artist.png", :class=>"img-responsive") %>
+			<%= image_tag("Local Artist.png", :class=>"img-responsive black-border") %>
 		</div>
 		<div class="col-md-6">
 			<h2 class="project-header"> Local Artist </h2>
-			<p> Application to showcase local artists’ work and create displays at local venues. Worked individually to create a separate Rails backend with AWS storage and MEAN stack frontend. </p>
+			<p> Local artist is an application to showcase local artists’ work and create displays at local venues. I worked individually to create a separate Rails backend with AWS storage and MEAN stack frontend. </p>
 			<h3>Technologies</h3>
-			<p> Ruby on Rails, Node.js/Express, AngularJS, Javascript, HTML, CSS </p>
+			<p> Ruby on Rails, Node.js/Express, AngularJS, Javascript, HTML, CSS, AWS S3 storage </p>
 			<h5> <a href="https://local-artist.herokuapp.com/#/"> Heroku</a> / <a href="https://github.com/teddycoleman/LocalArtistApp"> Github </a> </h4>
 		</div>
 	</div>
@@ -57,11 +60,11 @@
 	<!-- City Hyke Project -->
 	<div class="row project">
 		<div class="col-md-6">
-			<%= image_tag("City-Hyke.png", :class=>"img-responsive") %>
+			<%= image_tag("City-Hyke.png", :class=>"img-responsive black-border") %>
 		</div>
 		<div class="col-md-6">
 			<h2 class="project-header"> City Hyke </h2>
-			<p> Application to create and share walking tours of any city. Worked in two person team in which I built the server and implemented Google Maps, Google Places, and Google Directions API. </p>
+			<p> City Hyke is an application to create and share walking tours of any city. I worked in two person team in which I built the server and implemented Google Maps, Google Places, and Google Directions API. </p>
 			<h3>Technologies</h3>
 			<p> Node.js/Express, Javascript, HTML, CSS, Google Maps API, Google Places API, Google Directions API </p>
 			<h5> <a href="https://city-hyke.herokuapp.com/"> Heroku</a> / <a href="https://github.com/teddycoleman/walkingtours"> Github </a> </h4>
@@ -71,11 +74,11 @@
 	<!-- Trekkster Project -->
 	<div class="row project">
 		<div class="col-md-6">
-			<%= image_tag("Trekkster.png", :class=>"img-responsive") %>
+			<%= image_tag("Trekkster.png", :class=>"img-responsive black-border") %>
 		</div>
 		<div class="col-md-6">
 			<h2 class="project-header"> Trekkster </h2>
-			<p> Application to create and share travel tips for cities around the world. Worked in three person team in which I created CRUD actions for models, implemented turbolinks and friendly_id gems, and designed page layouts. </p>
+			<p> Trekkster is an application to create and share travel tips for cities around the world. I worked in three person team in which I created CRUD actions for models, implemented turbolinks and friendly_id gems, and designed page layouts. </p>
 			<h3>Technologies</h3>
 			<p> Ruby on Rails, Javascript, HTML, CSS </p>
 			<h5> <a href="https://trekkster.herokuapp.com/"> Heroku</a> / <a href="https://github.com/teddycoleman/project_vagabond"> Github </a> </h4>
@@ -85,25 +88,26 @@
 	<!-- Chess Puzzle Trainer Project -->
 	<div class="row project">
 		<div class="col-md-6">
-			<%= image_tag("Chess Puzzle Trainer.png", :class=>"img-responsive") %>
+			<%= image_tag("Chess Puzzle Trainer.png", :class=>"img-responsive black-border") %>
 		</div>
 		<div class="col-md-6">
 			<h2 class="project-header"> Chess Puzzle Trainer </h2>
-			<p> Application to solve chess puzzles and improve gameplay. Worked individually in pure Javascript, CSS, and HTML. </p>
+			<p> Chess Puzzle Trainer is an application to solve chess puzzles and improve gameplay. I worked individually in pure Javascript, CSS, and HTML. </p>
 			<h3>Technologies</h3>
 			<p> Javascript, HTML, CSS </p>
 			<h5> <a href="https://www.bitballoon.com/sites/chess-puzzle-training"> BitBalloon</a> / <a href="https://github.com/teddycoleman/chess_project"> Github </a> </h4>
 		</div>
 	</div>
+	<br>
 </div>
 
-<br>
-
 <!-- Skills -->
-<div class="container">
+<div class="container skills" id="skills">
 	<div class="row">
 		<div class="col-md-12 text-center">
-			<h1> Skills </h1>
+			<br>
+			<br>
+			<h1 class="section-header"> Skills </h1>
 		</div>
 	</div>
 
@@ -145,16 +149,17 @@
 			</ul>	
 		</div>
 	</div>
+	<br>
 </div>
-
-<br>
 
 <!-- Experience -->
 
-<div class="container">
+<div class="container experience" id="experience">
 	<div class="row">
 		<div class="col-md-12 text-center">
-			<h1> Experience </h1>
+			<br>
+			<br>
+			<h1 class="section-header"> Experience </h1>
 		</div>
 	</div>
 	<div class="container">
@@ -205,23 +210,27 @@
       </li>
     </ul>
 	</div>
+	<br>
 </div>
 
 <!-- Contact -->
-<div class="container">
+<div class="container contact" id="contact">
 	<div class="row">
 		<div class="col-md-12 text-center">
-			<h1> Contact </h1>
+			<br>
+			<br>
+			<h1 class="section-header"> Contact </h1>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-12 text-center">
-			<h4> Want to get in touch? Send me an email at: </h4>
+			<h4> Want to get in touch? Drop me a line at: </h4>
 			<p> teddy.f.coleman@gmail.com </p>
 			<a href="https://www.linkedin.com/in/teddy-coleman"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 			<a href="https://github.com/teddycoleman"><i class="fa fa-github" aria-hidden="true"></i></a>	
 		</div>
 	</div>
+	<br>
 </div>
 
 
