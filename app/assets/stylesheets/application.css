@@ -41,13 +41,17 @@
   padding: 0;*/
 }
 
+i {
+  margin-right: 10px;
+}
+
 li{
 	list-style: none;
 	text-align: left;
 }
 
 .my-name{
-	font-size: 12vh;
+	font-size: 96px;
 	top: 20vh;
 	position: relative;
 }
@@ -60,10 +64,11 @@ li{
 
 .project-header{
 	margin-top: 0;
+	font-size: 32px;
 }
 
 .section-header{
-	font-size: 7vh;
+	font-size: 56px;
 }
 
 .skills{
@@ -71,9 +76,13 @@ li{
 }
 
 .subtitle{
-	font-size: 6vh;
+	font-size: 24px;
 	top: 25vh;
 	position: relative;
+}
+
+.technologies-header{
+	font-size: 24px;
 }
 
 /*Timeline formatting*/
