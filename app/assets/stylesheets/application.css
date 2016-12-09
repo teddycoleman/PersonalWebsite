@@ -31,10 +31,10 @@
 	display: block;
 	height: 100vh;
   width: 100vw !important;
-/*  background: url("background.jpg") no-repeat top center fixed;
+  background: url("city_background.jpg") no-repeat top center fixed;
   background-size: cover;
   margin: 0 0 0 0 !important;
-  padding: 0;*/
+  padding: 0;
 }
 
 i {
@@ -51,6 +51,7 @@ li{
 	font-size: 96px;
 	top: 20vh;
 	position: relative;
+	color: white;
 }
 
 .navbar-brand{
@@ -58,11 +59,17 @@ li{
 }
 
 .navbar-default {
-	background-color: #717EFF !important;
+	background-color: rgba(0,0,0,0) !important;
+	border: none !important;
 }
 
 .navbar-brand, .navbar-right{
 	color: white !important;
+}
+
+.past-home{
+	background-color: rgb(113,126,255) !important;
+	/*background-color: black !important;*/
 }
 
 .portfolio{
@@ -86,6 +93,7 @@ li{
 	top: 25vh;
 	position: relative;
 	font-family: 'Aref Ruqaa', serif;
+	color: white;
 }
 
 .technologies-header{
