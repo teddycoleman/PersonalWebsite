@@ -57,6 +57,14 @@ li{
 	font-family: 'Aref Ruqaa', serif;
 }
 
+.navbar-default {
+	background-color: #717EFF !important;
+}
+
+.navbar-brand, .navbar-right{
+	color: white !important;
+}
+
 .portfolio{
 	position: relative;
 	display: block;
@@ -73,10 +81,6 @@ li{
 	font-family: 'Aref Ruqaa', serif;
 }
 
-.skills{
-	/*background-color: #fff;*/
-}
-
 .subtitle{
 	font-size: 24px;
 	top: 25vh;
@@ -86,4 +90,8 @@ li{
 
 .technologies-header{
 	font-size: 24px;
+}
+
+.top-link{
+	color: white !important;
 }
