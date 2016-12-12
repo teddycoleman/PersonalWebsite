@@ -15,8 +15,6 @@
 //= require turbolinks
 //= require_tree .
 
-
-
 $(window).on('scroll',function(){
 	var homeBottom = $('#home').offset().top + $('#home').height()-50;
   // we round here to reduce a little workload
@@ -29,12 +27,16 @@ $(window).on('scroll',function(){
   }
 });
 
-$(document).ready(function(){
+$( document ).on("turbolinks:load",function() {
 	var homeBottom = $('#home').offset().top + $('#home').height()-50;
 	var stop = Math.round($(window).scrollTop());
+	console.log(stop);
+	console.log(homeBottom);
 	if (stop > homeBottom) {
   	$('#navbar').addClass('past-home');
+  	console.log("adding class");
   } else {
   	$('#navbar').removeClass('past-home');
+  	console.log("removing class");
   }
 });
