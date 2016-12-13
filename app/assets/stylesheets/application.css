@@ -23,10 +23,6 @@
 	border: 1px solid black;
 }
 
-.contact{
-	/*background-color: #F7CB21;*/
-}
-
 .circular-image{
 	border-radius: 50%;
 	overflow: hidden;
@@ -36,7 +32,7 @@
 	display: block;
 	height: 100vh;
   width: 100vw !important;
-  background: url("city_background.jpg") no-repeat top center fixed;
+  background: url("SF.jpg") no-repeat top center fixed;
   background-size: cover;
   margin: 0 0 0 0 !important;
   padding: 0;
@@ -44,6 +40,15 @@
 
 i {
   margin-right: 10px;
+  color: black !important;
+}
+
+.icon {
+	height: 24px;
+	width: 28px;
+	display: inline-block !important;
+	top: -5px;
+	position: relative;
 }
 
 li{
@@ -52,15 +57,10 @@ li{
 }
 
 .my-name{
-	font-family: 'Poppins', sans-serif;
 	font-size: 96px;
 	top: 20vh;
 	position: relative;
 	color: white;
-}
-
-.navbar-brand{
-	font-family: 'Poppins', sans-serif;
 }
 
 .navbar-default {
@@ -78,13 +78,11 @@ p {
 
 .past-home{
 	background-color: rgb(113,126,255) !important;
-	/*background-color: black !important;*/
 }
 
 .portfolio{
 	position: relative;
 	display: block;
-	/*background-color: #98EFC7;*/
 }
 
 .project-header{
@@ -94,14 +92,16 @@ p {
 
 .section-header{
 	font-size: 56px;
-	font-family: 'Poppins', sans-serif;
+}
+
+.shift-left{
+	padding-left: 45px !important;
 }
 
 .subtitle{
 	font-size: 24px;
 	top: 25vh;
 	position: relative;
-	font-family: 'Poppins', sans-serif;
 	color: white;
 }
 
